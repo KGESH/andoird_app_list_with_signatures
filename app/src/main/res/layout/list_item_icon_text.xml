@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentLeft="true"
+               android:id="@+id/icon"
+               android:contentDescription="@string/app_icon" />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/text"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_toEndOf="@id/icon"
+              android:layout_toRightOf="@id/icon" />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/fingerprint"
+              android:textStyle="bold"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_toEndOf="@id/icon"
+              android:layout_toRightOf="@id/icon"
+              android:layout_below="@id/text" />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/installer"
+              android:textStyle="italic"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_toEndOf="@id/icon"
+              android:layout_toRightOf="@id/icon"
+              android:layout_below="@id/fingerprint" />
+</RelativeLayout>
